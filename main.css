@@ -218,3 +218,19 @@ h4 {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+#front1{
+		width: 20%;
+	}
+
+
+@media(max-width:800px){
+    #front1{
+		width: 40%;
+	}
+}
+@media(max-width:500px){
+   
+	#front1{
+		width: 100%;
+	}
+}
