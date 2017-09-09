@@ -19,12 +19,12 @@ html, body {
 }
 
 body {
-	background: #eeeeee;
-	background: -webkit-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: -moz-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: -o-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: -ms-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: linear-gradient(top, #eeeeee, #cccccc 100%);
+	background: #A8D2DE;
+	background: -webkit-linear-gradient(top, #A8D2DE, #A8D2DE 100%);
+	background: -moz-linear-gradient(top, #A8D2DE, #A8D2DE 100%);
+	background: -o-linear-gradient(top, #A8D2DE, #A8D2DE 100%);
+	background: -ms-linear-gradient(top, #A8D2DE, #A8D2DE 100%);
+	background: linear-gradient(top, #A8D2DE, #A8D2DE 100%);
 	background-attachment:fixed;
 }
 
@@ -116,12 +116,13 @@ h4 {
 }
 
 #intro {
-	width:80%;
+	width:90%;
 	left:50%;
+	height: 35%;
 	top:1em;
-	margin-left:-40%;
+	margin-left:-45%;
 	padding:2em;
-	background:#fff;
+	background:#c43235;
 	text-align:center;
 	border-radius:1em;
 
@@ -134,6 +135,7 @@ h4 {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
 }
 
 
@@ -166,9 +168,10 @@ h4 {
 }
 
 #easing {
-	top:8%;
+	
 	width:75%;
 	z-index:101;
+	text-align: center;
 }
 
 .drop {
@@ -196,15 +199,16 @@ h4 {
 	top: 75px;
 }
 #logo{
-	padding-left: 45%;
+	
 }
 #intro1 {
-	width:80%;
+	width:90%;
 	left:50%;
+	height: 35%;
 	top:1em;
-	margin-left:-40%;
+	margin-left:-45%;
 	padding:2em;
-	background:#fff;
+	background:#c43235;
 	text-align:center;
 	border-radius:1em;
 
@@ -219,18 +223,303 @@ h4 {
 	box-sizing: border-box;
 }
 #front1{
-		width: 20%;
+	width: 20%;
+	
+}
+.reg_class{
+	top: 10%;
+}
+#sun1{
+	position: absolute;
+	right: -27%;
+	width: 10%;
 	}
+#clg-img{
+	position: absolute;
+	text-align: center;
+}
+
+.events_class{
+	top: 23%;
+}
+.nights_class{
+	top: 39%;
+}
+.college_class{
+	z-index: 9999998;
+}
+#reg{
+	width:40%;
+	top: 10%
+	float: left;
+	top: 1000px;
+}
+#reg:hover, #events:hover, #nights:hover{
+	transform: scale(1.1);
+}
+#events{
+	width:35%;
+	float: right;
+	top: 30%;
+}
+#nights{
+	width:45%;
+	float: left;
+	top: 60%;
+}
+.scroll-data{
+
+}
+.nav-bar{
+	position: fixed; top: 0; z-index: 1000; background-color: #06000a; width: 100%; height: 8%;
+	text-align: center;;
+}
+
+.ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+
+.wave1 {
+  background: url(http://tedmcdo.com/labs/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave1 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave1:nth-of-type(2) {
+  top: -175px;
+  animation: wave1 7.5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+.wave1:nth-of-type(3) {
+  top: -180px;
+  animation: wave1 8s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
 
 
+@keyframes wave1 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
+#loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.no-js #loader-wrapper {
+	display: none;
+}
+
+#loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #16a085;
+	-webkit-animation: spin 1.7s linear infinite;
+	animation: spin 1.7s linear infinite;
+	z-index: 11;
+}
+
+#loader:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #e74c3c;
+	-webkit-animation: spin-reverse .6s linear infinite;
+	animation: spin-reverse .6s linear infinite;
+}
+
+#loader:after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #f9c922;
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin-reverse {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+@keyframes spin-reverse {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+		transform: rotate(-360deg);
+	}
+}
+
+#loader-wrapper .loader-section {
+	position: fixed;
+	top: 0;
+	width: 51%;
+	height: 100%;
+	background: #222;
+	z-index: 10;
+}
+
+#loader-wrapper .loader-section.section-left {
+	left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+	right: 0;
+}
+
+/* Loaded styles */
+.loaded #loader-wrapper .loader-section.section-left {
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+	visibility: hidden;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: all 0.3s 1s ease-out;
+	transition: all 0.3s 1s ease-out;
+}
+
+/*Preloader Ends*/
 @media(max-width:800px){
     #front1{
 		width: 40%;
 	}
+	 #sun1{
+
+
+	width: 100px;
+	height: 100px;
+	}
+#reg{
+		width:130%;
+		top: 20%;
+	}
+	#events{
+	
+		width:130%;
+		top: 20%;
+	}
+	#nights{
+		width:130%;
+		top: 20%;
+	}
 }
 @media(max-width:500px){
-   
+
+#easing {
+	
+	width:100%;
+}
+.ocean{
+	bottom: -0px;
+}
+   #sun1{
+	position: absolute;
+	right: 2%;
+	width: 75px;
+	height: 75px;
+	}
 	#front1{
 		width: 100%;
+
+	}
+	#reg{
+		width:130%;
+		top: 20%;
+	}
+	#events{
+	
+		width:130%;
+		top: 20%;
+	}
+	#nights{
+		width:130%;
+		top: 20%;
 	}
 }

@@ -9,26 +9,31 @@
 
 	<link href="fixed-positioning.css" rel="stylesheet" type="text/css" />
 	<link href="main.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="gooey.css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="splash.css">
+	<!-- 	 -->
+<!-- <div class="nav-bar" >
+<img id="logo" src="images/logo.png"/  height="70px" >
+</div> -->
+<!-- =======================================================
+Author: Aryan Agarwal
+Author URL: https://prefedge.com
+======================================================= -->
 </head>
 
 
 
 <body>
-<div class="nav-bar"  style="position: fixed; top: 0; z-index: 1000; background-color: blue; width: 100%; height: 75px;">
-<img id="logo" src="images/logo.png"/  height="70px" >
-</div>
+
 <div class="main-sk">
 
 
 	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
 
-	<div id="intro" data-0="opacity:1;top:75px;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+	<div id="intro" data-0="opacity:1;top:10%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
 		
 		<img id="front1" src="images/g-9.jpg" >
+
 		
 		
 	</div>
@@ -46,16 +51,50 @@
 		<h2>all numeric properties</h2>
 		<p>width, height, padding, font-size, z-index, blah blah blah</p>
 	</div> -->
+<!-- Splash Screen Here -->
+<div class="splash" style="width: 100%; height: 100%; position: fixed; top: 0; background: white; z-index: 99999999; text-align: center; overflow: hidden;">
+<div class="out">
+  <div class="wave first"></div>
+  <div class="wave second"></div>
+  <div class="wave third"></div>
+     <div class="wave forth"></div>
+     <div class="wave fifth"></div>
+  <div class="circle">
+  </div>
+</div>
+</div>
+<!-- Splash Screen Ends Here -->
+		<div class="sun_class" id="easing" data-0="display:none;" data-300="display:block;top:-15%;" data-500="bottom:100%" data-1000="top:3%;" data-3600="top:3%;" data-4000="top:-15%;;" width="100%" >
+		<img id="sun1" src="images/sun.png">
+		</div>
+		<div class="college_class" id="easing" data-300="top:130%" data-500="top:100%" data-1000="top:100%;" data-3600="top:100%;" data-4000="top:130%;" width="100%" >
+		<div class="ocean">
+  		<div class="wave1"></div>
+  		<div class="wave1"></div>
+  		<div class="wave1"></div>
+		</div>
+		</div>
+		
+		<div class="sun_class" id="easing" data-0="display:none;" data-4000="display:block;top:-15%;" data-4200="bottom:100%" data-4400="top:3%;" data-10000="top:3%;" data-12000="top:-15%;;" width="100%" style="z-index: 1000000;">
+		
+		</div>		
+		<div class="star_class" id="easing" data-0="display:none;" data-4400="display:block;"  >
+		
+		</div>	
 
-	<div id="easing_wrapper" data-0="display:none;" data-500="display:block;" data-4900="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-5900="background:rgba(0,0,0,1);color:rgb(255,255,255);" data-10000="top:0%;" data-12000="top:-100%;">
-		<div id="easing" data-500="left:100%" data-1500="left:15%;" data-2000="left:25%" data-2200="left:-100%" style="background-color: red;" width="100%" >
-		<img src="images/abt1.jpg" width="23%"  >
+	<div id="easing_wrapper" data-0="display:none;" data-500="display:block;" data-3600="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-4400="background:rgba(196,50,53,1);color:rgb(255,255,255);" data-10000="top:0%;" data-12000="top:-100%;">
+
+		<div class="reg_class" id="easing" data-700="left:100%" data-1000="left:45%;" data-2000="left:25%" data-2600="left:-130%"  width="100%" >
+		<img id="reg" src="images/about.png">
 		</div>
-		<div id="easing" data-1000="right:100%" data-2000="right:15%;" data-2500="right:25%" data-2700="right:-120%" style="background-color: red; top: 30%;" width="100%" >
-		<img src="images/abt1.jpg" style="float: right;" width="36%">
+		<div class="events_class" id="easing" data-1000="right:100%" data-1500="right:55%;" data-2500="right:35%" data-3100="right:-120%" width="100%" >
+		<img  id="events" src="images/contact_us.png" style="" >
+		
 		</div>
-		<div id="easing" data-1500="left:100%" data-2500="left:15%;" data-3000="left:25%" data-3200="left:-100%" style="background-color: red; top: 65%" width="100%" >
-		<img src="images/abt1.jpg" width="27%">
+
+
+		<div class="nights_class" id="easing" data-1500="left:100%" data-2000="left:75%;" data-3000="left:55%" data-3600="left:-130%"  width="100%" >
+		<img id="nights" src="images/sponsors.png" >
 		
 			<!-- <h2>easing?</h2>
 			<p>sure.</p>
@@ -71,22 +110,23 @@
 		<div class="drop" data-6500="left:65%;bottom[inverted]:100%;" data-9500="bottom:0%;">inverted</div>
 		<div class="drop" data-6500="left:75%;bottom[bounce]:100%;" data-9500="bottom:0%;">bounce</div> -->
 	</div>
+	<div class="swing_class" id="easing"  data-4400="display:none;" data-4500="display:block;top:15%; right:auto;" data-5500="top:-100%"  width="100%" >
+		<img id="sun1" src="images/swing.png" style="text-align: center;">
+		</div>
 	</div>
 
 	<div id="download" data-10000="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(0,50,100);border-width:0px;" data-12000="top:10%;border-radius:2em;background:rgb(190,230,255);border-width:10px;">
-		<h2>the end</h2>
-		<p>123456</p>
-		<p><strong>Now get this thing on <a href="#">GitHub</a> and spread the word, it's open source!</strong> <a href="https://twitter.com/share" class="twitter-share-button" data-url="#" >Tweet</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-		<p>1234<a href="#">1234</a>.</p>
-		<p>Handcrafted by <a href="www.prefedge.com" class="twitter-follow-button" data-show-count="false">Follow @Aryan</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-	</div>
+		<h2></h2>
+		<p></p>
+		<p>Handcrafted by <a href="www.prefedge.com">@Aryan</a>
+		</div>
 
 	<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
 	</div>
 
 	<script type="text/javascript" src="skrollr.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
@@ -103,10 +143,10 @@
 		}
 	});
 	</script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 
+<script type="text/javascript">
+$(".splash").delay(6000).fadeOut();
+</script>
 
 </body>
 
