@@ -12,8 +12,18 @@
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="splash.css">
 	<!-- 	 -->
-<!-- <div class="nav-bar" >
+<!-- <div class="nav-bar" style="text-align: center; ">
+<ul class="lg_menu" id="right_menu">
+<li>Register</li>
+<li>Hospitality</li>
+<li>events</li>
+</ul>
 <img id="logo" src="images/logo.png"/  height="70px" >
+<ul class="lg_menu" id="left_menu">
+<li>Sponsors</li>
+<li>Social Couse</li>
+<li>Contact Us</li>
+</ul>
 </div> -->
 <!-- =======================================================
 Author: Aryan Agarwal
@@ -31,15 +41,11 @@ Author URL: https://prefedge.com
 	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
 
 	<div id="intro" data-0="opacity:1;top:10%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
-		
-		<img id="front1" src="images/g-9.jpg" >
-
-		
-		
+		<!-- <img id="front1" src="images/g-9.jpg" --> 
 	</div>
+
 	<div id="intro1" data-0="opacity:1;top:450px;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:900%;transform:rotate(90deg);">
-		
-		<img id="front1" src="images/g-9.jpg">
+		<!-- <img id="front1" src="images/g-9.jpg"> -->
 	</div>
 
 	<div id="open-1">
@@ -67,22 +73,61 @@ Author URL: https://prefedge.com
 		<div class="sun_class" id="easing" data-0="display:none;" data-300="display:block;top:-15%;" data-500="bottom:100%" data-1000="top:3%;" data-3600="top:3%;" data-4000="top:-15%;;" width="100%" >
 		<img id="sun1" src="images/sun.png">
 		</div>
-		<div class="college_class" id="easing" data-300="top:130%" data-500="top:100%" data-1000="top:100%;" data-3600="top:100%;" data-4000="top:130%;" width="100%" >
+		<div class="college_class" id="easing" data-300="top:130%" data-500="top:100%" data-1000="top:100%;" data-3600="top:100%;" data-4000="top:20%;" data-6300="top:20%;" data-6500="top:0;" width="100%" >
 		<div class="ocean">
   		<div class="wave1"></div>
   		<div class="wave1"></div>
   		<div class="wave1"></div>
 		</div>
 		</div>
-		
+		<div class="box" style="z-index:9999; background: #1a82f7;  background: -webkit-linear-gradient(#1a82f7, #0f5e9c); background: -moz-linear-gradient(#1a82f7, #0f5e9c);background: -linear-gradient(#1a82f7, #0f5e9c); width: 100%; height: 100%;" data-0="display:none" data-3600="display:block;top:100%;" data-4000="top:20%;" data-6300="top:20%;" data-6500="top:0;">
+		<!-- 025a72 -->
+		<canvas id='bgCanvas'></canvas>
+		</div>
 		<div class="sun_class" id="easing" data-0="display:none;" data-4000="display:block;top:-15%;" data-4200="bottom:100%" data-4400="top:3%;" data-10000="top:3%;" data-12000="top:-15%;;" width="100%" style="z-index: 1000000;">
 		
 		</div>		
 		<div class="star_class" id="easing" data-0="display:none;" data-4400="display:block;"  >
 		
-		</div>	
+		</div>
 
-	<div id="easing_wrapper" data-0="display:none;" data-500="display:block;" data-3600="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-4400="background:rgba(196,50,53,1);color:rgb(255,255,255);" data-10000="top:0%;" data-12000="top:-100%;">
+		<!-- Events Start Here -->
+		<div class="events_new" id="easing" data-0="display:none" data-4050="display:block; left:100%; top:22%;" data-4200="left:00%;" data-5100="left:0%" data-5300="left:100%;" style="z-index: 10000; width:100%;"">
+			<h1>Events</h1>
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-4250="display:block; left:100%; top:35%;" data-4350="left:30%;" data-5100="left:30%" data-5300="left:100%;" style="z-index: 10000; width:100%;"">
+			<h1>Category 1</h1>
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-4350="display:block; left:100%; top:55%;" data-4550="left:30%;" data-5100="left:30%" data-5300="left:100%;" style="z-index: 10000; width:100%;"">
+			<h1>Category 2</h1>
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-4300="display:block; left:-100%; top:45%;" data-4400="left:-30%;" data-5100="left:-30%" data-5300="left:-100%;" style="z-index: 10000; width:100%;"">
+			<h1>Category 3</h1>
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-4400="display:block; left:-100%; top:65%;" data-4600="left:-30%;" data-5100="left:-30%" data-5300="left:-100%;" style="z-index: 10000; width:100%;"">
+			<h1>Category 4</h1>
+		</div>
+		<!-- Events End Here -->
+
+		<!-- Nights Start from here -->
+		<div class="events_new" id="easing" data-0="display:none" data-5200="display:block; left:100%; top:22%;" data-5300="left:00%;" data-5900="left:0%" data-6100="left:100%;" style="z-index: 10000; width:100%;"">
+			<h1>Nights</h1>
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-5300="display:block; left:100%; top:35%;" data-5400="left:30%;" data-6100="left:30%" data-6300="left:100%;" style="z-index: 10000; width:100%;"">
+			<h1>Night 1</h1>
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-5400="display:block; left:100%; top:55%;" data-5500="left:30%;" data-6100="left:30%" data-6300="left:100%;" style="z-index: 10000; width:100%;"">
+			<h1>Night 2</h1>
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-5350="display:block; left:-100%; top:45%;" data-5450="left:-30%;" data-6100="left:-30%" data-6300="left:-100%;" style="z-index: 10000; width:100%;"">
+			<h1>Night 3</h1>
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-5450="display:block; left:-100%; top:65%;" data-5550="left:-30%;" data-6100="left:-30%" data-6300="left:-100%;" style="z-index: 10000; width:100%;"">
+			<h1>Night 4</h1>
+		</div>
+		<!-- Nights End here -->
+
+	<div id="easing_wrapper" data-0="display:none;" data-500="display:block;" data-3600="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-4400="background:rgba(0, 0, 0, 0);color:rgb(255,255,255);" data-10000="top:0%;" data-12000="top:-100%;">
 
 		<div class="reg_class" id="easing" data-700="left:100%" data-1000="left:45%;" data-2000="left:25%" data-2600="left:-130%"  width="100%" >
 		<img id="reg" src="images/about.png">
@@ -110,10 +155,7 @@ Author URL: https://prefedge.com
 		<div class="drop" data-6500="left:65%;bottom[inverted]:100%;" data-9500="bottom:0%;">inverted</div>
 		<div class="drop" data-6500="left:75%;bottom[bounce]:100%;" data-9500="bottom:0%;">bounce</div> -->
 	</div>
-	<div class="swing_class" id="easing"  data-4400="display:none;" data-4500="display:block;top:15%; right:auto;" data-5500="top:-100%"  width="100%" >
-		<img id="sun1" src="images/swing.png" style="text-align: center;">
-		</div>
-	</div>
+	
 
 	<div id="download" data-10000="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(0,50,100);border-width:0px;" data-12000="top:10%;border-radius:2em;background:rgb(190,230,255);border-width:10px;">
 		<h2></h2>
@@ -143,9 +185,49 @@ Author URL: https://prefedge.com
 		}
 	});
 	</script>
-
 <script type="text/javascript">
-$(".splash").delay(6000).fadeOut();
+	var canvas = document.getElementById('bgCanvas');
+var ctx = canvas.getContext('2d');
+var particles = [];
+var particleCount = 8;
+
+for(var i=0; i<particleCount;i++)
+  particles.push(new particle());
+
+function particle() {
+  this.x = Math.random() * canvas.width;
+  this.y = canvas.height + Math.random() * 100;
+  this.speed = 0.4 + Math.random() * 1;
+  this.radius = 0.35 * 10;
+  this.opacity = (Math.random() * 100) / 1000;
+}
+
+
+function loop() {
+  requestAnimationFrame(loop);
+  draw();
+}
+
+function draw() {
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  
+  ctx.globalCompositeOperation = 'lighter';
+  for(var i=0; i<particles.length; i++) {
+    var p = particles[i];
+    ctx.beginPath();
+    ctx.fillStyle = 'rgba(255,255,255,' + p.opacity + ')';
+    ctx.arc(p.x, p.y, p.radius, 0, Math.PI*2, false);
+    ctx.fill();
+    p.y -= p.speed;
+    if(p.y <= -10)
+      particles[i] = new particle();
+  }
+}
+
+loop();
+</script>
+<script type="text/javascript">
+$(".splash").delay(0000).fadeOut();
 </script>
 
 </body>
