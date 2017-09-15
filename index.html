@@ -12,19 +12,19 @@
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="splash.css">
 	<!-- 	 -->
-<!-- <div class="nav-bar" style="text-align: center; ">
+<div class="nav-bar" style="z-index: 10000; font-family: patua-one; ">
 <ul class="lg_menu" id="right_menu">
-<li>Register</li>
-<li>Hospitality</li>
-<li>events</li>
+<li class="lg_item"> Register</li>
+<li class="lg_item">Hospitality</li>
+<li class="lg_item">Events</li>
 </ul>
-<img id="logo" src="images/logo.png"/  height="70px" >
+<img id="logo" src="images/logo.png"/>
 <ul class="lg_menu" id="left_menu">
-<li>Sponsors</li>
-<li>Social Couse</li>
-<li>Contact Us</li>
+<li class="lg_item">Sponsors</li>
+<li class="lg_item">Social Cause</li>
+<li class="lg_item">Contact Us</li>
 </ul>
-</div> -->
+</div>
 <!-- =======================================================
 Author: Aryan Agarwal
 Author URL: https://prefedge.com
@@ -39,17 +39,20 @@ Author URL: https://prefedge.com
 
 
 	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
-
-	<div id="intro" data-0="opacity:1;top:10%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+	<div class="baloon" data-0="top:20%" data-500="top:-120%;">
+<img id="baloon_front" src="images/baloon.png">
+	</div>
+	
+	<!-- <div id="intro" data-0="opacity:1;top:10%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
 		<!-- <img id="front1" src="images/g-9.jpg" --> 
 	</div>
-
-	<div id="intro1" data-0="opacity:1;top:450px;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:900%;transform:rotate(90deg);">
+<!-- 
+	<div id="intro1" data-0="opacity:1;top:450px;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:900%;transform:rotate(90deg);"> -->
 		<!-- <img id="front1" src="images/g-9.jpg"> -->
 	</div>
-
-	<div id="open-1">
-		
+<!-- 
+	<div id="open-1"> -->
+	
 	</div>
 
 	
@@ -73,7 +76,7 @@ Author URL: https://prefedge.com
 		<div class="sun_class" id="easing" data-0="display:none;" data-300="display:block;top:-15%;" data-500="bottom:100%" data-1000="top:3%;" data-3600="top:3%;" data-4000="top:-15%;;" width="100%" >
 		<img id="sun1" src="images/sun.png">
 		</div>
-		<div class="college_class" id="easing" data-300="top:130%" data-500="top:100%" data-1000="top:100%;" data-3600="top:100%;" data-4000="top:20%;" data-6300="top:20%;" data-6500="top:0;" width="100%" >
+		<div class="college_class" id="easing" data-300="top:150%" data-500="top:150%" data-1000="top:110%;" data-3600="top:100%;" data-4000="top:20%;" data-6300="top:20%;" data-6500="top:0;" width="100%" >
 		<div class="ocean">
   		<div class="wave1"></div>
   		<div class="wave1"></div>
@@ -92,38 +95,86 @@ Author URL: https://prefedge.com
 		</div>
 
 		<!-- Events Start Here -->
-		<div class="events_new" id="easing" data-0="display:none" data-4050="display:block; left:100%; top:22%;" data-4200="left:00%;" data-5100="left:0%" data-5300="left:100%;" style="z-index: 10000; width:100%;"">
-			<h1>Events</h1>
+		<div class="desktop_events" >
+		<div class="events_new" id="easing" data-0="display:none" data-4050="display:block; left:100%; top:12%;" data-4200="left:00%;" data-5100="left:0%" data-5300="left:-100%;" style="z-index: 10004; width:100%;">
+				<img id="tbt" src="images/events1.png" style="width: 40%;">
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-4250="display:block; left:100%; top:35%;" data-4350="left:30%;" data-5100="left:30%" data-5300="left:100%;" style="z-index: 10000; width:100%;"">
-			<h1>Category 1</h1>
+		<div class="events_new" id="easing" data-0="display:none" data-4250="display:block; top:100%; left:20%;" data-4350="top:60%;" data-5100="top:50%" data-5300="top:100%;" style="z-index: 10003; width:14%;">
+			<img id="tbt" src="images/beau_vista.png"/>
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-4350="display:block; left:100%; top:55%;" data-4550="left:30%;" data-5100="left:30%" data-5300="left:100%;" style="z-index: 10000; width:100%;"">
-			<h1>Category 2</h1>
+		<div class="events_new" id="easing" data-0="display:none" data-4300="display:block; top:100%; left:40%;" data-4400="top:60%;" data-5100="top:50%" data-5300="top:100%;" style="z-index: 10002; width:14%;">
+			<img id="tbt" src="images/carpe_dictum.png"/>
+			</div>
+		<div class="events_new" id="easing" data-0="display:none" data-4350="display:block; top:100%; left:60%;" data-4550="top:60%;" data-5100="top:50%" data-5300="top:100%;" style="z-index: 10001; width:14%; ">
+			<img id="tbt" src="images/florence.png"/>
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-4300="display:block; left:-100%; top:45%;" data-4400="left:-30%;" data-5100="left:-30%" data-5300="left:-100%;" style="z-index: 10000; width:100%;"">
-			<h1>Category 3</h1>
+		
+		<div class="events_new" id="easing" data-0="display:none" data-4400="display:block; top:100%; left:80%;" data-4600="top:60%;" data-5100="top:50%" data-5300="top:100%;" style="z-index: 10000; width: 14%;">
+			<img id="tbt" src="images/specials.png"/>
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-4400="display:block; left:-100%; top:65%;" data-4600="left:-30%;" data-5100="left:-30%" data-5300="left:-100%;" style="z-index: 10000; width:100%;"">
-			<h1>Category 4</h1>
+		</div>
+
+		<!-- Mobile Event -->
+		<div class="mob_events">
+		<div class="events_new" id="easing" data-0="display:none" data-4050="display:block; left:100%; top:12%;" data-4200="left:00%;" data-5100="left:0%" data-5300="left:-100%;" style="z-index: 10004; width:100%;">
+				<img id="" src="images/events1.png" style="width: 80%;">
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-4250="display:block; left:100%; top:20%;" data-4350="left:5%;" data-5100="left:00%" data-5300="left:100%;" style="z-index: 10003; width:100%;">
+			<img id="tbt1" src="images/beau_vista.png" width="35%" />
+		</div>
+		
+		<div class="events_new" id="easing" data-0="display:none" data-4350="display:block; left:100%; top:50%;" data-4550="left:5%;" data-5100="left:00%" data-5300="left:100%;" style="z-index: 10001; width:100%; ">
+			<img id="tbt1" src="images/florence.png" width="35%"/>
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-4300="display:block; left:-100%; top:35%;" data-4400="left:-5%;" data-5100="left:00%;" data-5300="left:-100%;" style="z-index: 10002; width:100%;">
+			<img id="tbt2" src="images/carpe_dictum.png" width="35%"/>
+			</div>
+		
+		<div class="events_new" id="easing" data-0="display:none" data-4400="display:block; left:-100%; top:65%;" data-4600="left:-5%;" data-5100="left:00%" data-5300="left:-100%;" style="z-index: 10000; width: 100%;">
+			<img id="tbt2" src="images/specials.png" width="35%"/>
+		</div>
 		</div>
 		<!-- Events End Here -->
 
 		<!-- Nights Start from here -->
-		<div class="events_new" id="easing" data-0="display:none" data-5200="display:block; left:100%; top:22%;" data-5300="left:00%;" data-5900="left:0%" data-6100="left:100%;" style="z-index: 10000; width:100%;"">
-			<h1>Nights</h1>
+		<div class="desktop_events" >
+		<div class="events_new" id="easing" data-0="display:none" data-5200="display:block; left:100%; top:12%;" data-5300="left:00%;" data-5900="left:0%" data-6100="left:-100%;" style="z-index: 10004; width:100%;">
+				<img id="tbt" src="images/nights.png" style="width: 40%;">
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-5300="display:block; left:100%; top:35%;" data-5400="left:30%;" data-6100="left:30%" data-6300="left:100%;" style="z-index: 10000; width:100%;"">
-			<h1>Night 1</h1>
+		<div class="events_new" id="easing" data-0="display:none" data-5300="display:block; top:100%; left:20%;" data-5400="top:60%;" data-6100="top:50%" data-6300="top:100%;" style="z-index: 10003; width:14%;">
+			<img id="tbt" src="images/beau_vista.png"/>
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-5400="display:block; left:100%; top:55%;" data-5500="left:30%;" data-6100="left:30%" data-6300="left:100%;" style="z-index: 10000; width:100%;"">
-			<h1>Night 2</h1>
+		<div class="events_new" id="easing" data-0="display:none" data-5400="display:block; top:100%; left:40%;" data-5500="top:60%;" data-6100="top:50%" data-6300="top:100%;" style="z-index: 10002; width:14%;">
+			<img id="tbt" src="images/carpe_dictum.png"/>
+			</div>
+		<div class="events_new" id="easing" data-0="display:none" data-5350="display:block; top:100%; left:60%;" data-5450="top:60%;" data-6100="top:50%" data-6300="top:100%;" style="z-index: 10001; width:14%; ">
+			<img id="tbt" src="images/florence.png"/>
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-5350="display:block; left:-100%; top:45%;" data-5450="left:-30%;" data-6100="left:-30%" data-6300="left:-100%;" style="z-index: 10000; width:100%;"">
-			<h1>Night 3</h1>
+		
+		<div class="events_new" id="easing" data-0="display:none" data-5450="display:block; top:100%; left:80%;" data-5550="top:60%;" data-6100="top:50%" data-6300="top:100%;" style="z-index: 10000; width: 14%;">
+			<img id="tbt" src="images/specials.png"/>
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-5450="display:block; left:-100%; top:65%;" data-5550="left:-30%;" data-6100="left:-30%" data-6300="left:-100%;" style="z-index: 10000; width:100%;"">
-			<h1>Night 4</h1>
+		</div>
+
+		<!-- Mobile Nights -->
+		<div class="mob_events">
+		<div class="events_new" id="easing" data-0="display:none" data-5200="display:block; left:100%; top:12%;" data-5300="left:00%;" data-5900="left:0%" data-6100="left:-100%;" style="z-index: 10004; width:100%;">
+				<img id="" src="images/nights.png" style="width: 80%;">
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-5300="display:block; left:100%; top:20%;" data-5400="left:5%;" data-6100="left:00%" data-6300="left:100%;" style="z-index: 10003; width:100%;">
+			<img id="tbt1" src="images/beau_vista.png" width="35%" />
+		</div>
+		
+		<div class="events_new" id="easing" data-0="display:none" data-5400="display:block; left:100%; top:50%;" data-5500="left:5%;" data-6100="left:00%" data-6300="left:100%;" style="z-index: 10001; width:100%; ">
+			<img id="tbt1" src="images/florence.png" width="35%"/>
+		</div>
+		<div class="events_new" id="easing" data-0="display:none" data-5350="display:block; left:-100%; top:35%;" data-5450="left:-5%;" data-6100="left:00%;" data-6300="left:-100%;" style="z-index: 10002; width:100%;">
+			<img id="tbt2" src="images/carpe_dictum.png" width="35%"/>
+			</div>
+		
+		<div class="events_new" id="easing" data-0="display:none" data-5450="display:block; left:-100%; top:65%;" data-5550="left:-5%;" data-6100="left:00%" data-6300="left:-100%;" style="z-index: 10000; width: 100%;">
+			<img id="tbt2" src="images/specials.png" width="35%"/>
+		</div>
 		</div>
 		<!-- Nights End here -->
 
@@ -225,6 +276,15 @@ function draw() {
 }
 
 loop();
+</script>
+<script type="text/javascript">
+	var tl = new TimelineMax({
+	repeat:-1,
+	yoyo:true
+});
+
+tl.to("#distortion", 1, {attr:{scale:60}, ease:Power2.easeOut})
+.to("#distortion", 1, {attr:{scale:40}, ease:Power2.easeOut});
 </script>
 <script type="text/javascript">
 $(".splash").delay(0000).fadeOut();

@@ -200,7 +200,8 @@ h4 {
 	top: 75px;
 }
 #logo{
-	
+	height: 100%;
+	width: 14%;
 }
 #intro1 {
 	width:90%;
@@ -255,7 +256,7 @@ h4 {
 	float: left;
 	top: 1000px;
 }
-#reg:hover, #events:hover, #nights:hover{
+#reg:hover, #events:hover, #nights:hover, #tbt:hover {
 	transform: scale(1.1);
 }
 #events{
@@ -273,7 +274,8 @@ h4 {
 }
 .nav-bar{
 	position: fixed; top: 0; z-index: 1000; width: 100%; height: 8%;
-	text-align: center;;
+	text-align: center;
+	
 }
 
 .ocean { 
@@ -282,7 +284,7 @@ h4 {
   position:absolute;
   bottom:0;
   left:0;
-  background: #1a82f7;
+  background: #A8D2DE;
 }
 
 .wave1 {
@@ -291,20 +293,21 @@ h4 {
   top: -198px;
   width: 6400px;
   height: 198px;
-  animation: wave1 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave1 7s  infinite;
   transform: translate3d(0, 0, 0);
 }
 
 .wave1:nth-of-type(2) {
   top: -198px;
-  animation: wave1 7.5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave1 7.5s  -.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
 .wave1:nth-of-type(3) {
   top: -198px;
-  animation: wave1 8s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave1 8s  -.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
+/*cubic-bezier( 0.36, 0.36, 0.36, 0.36)*/
 #bgCanvas{
     width:100%;
     height:100%;
@@ -326,7 +329,7 @@ h4 {
 
 @keyframes swell {
   0%, 100% {
-    transform: translate3d(0,-25px,0);
+    transform: translate3d(0,5px,0);
   }
   50% {
     transform: translate3d(0,5px,0);
@@ -337,30 +340,94 @@ h4 {
 li{
 	display: inline;
 }
-
-
+svg text {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		stroke-width: 3px;
+		stroke-linejoin: round;
+}
+.lg_menu{
+	position: absolute;
+	font-size: 25px;
+	color: white;
+}
+#right_menu{
+	top: 25px;
+	width: 43%
+}
+#left_menu{
+	left: 57%;
+	top: 25px;
+	width: 43%;
+}
+.lg_item{
+	padding: 25px;
+}
+.mob_events{
+	display: none;
+}
+#baloon_front{
+	width: 140%;
+}
+.baloon{
+	left:70%; 
+}
+@media(max-width:1440px){
+.lg_menu{
+	display: none;
+}
+}
 @media(max-width:800px){
+	.baloon{
+		left: 60%;
+	}
+	#baloon_front{
+		width: 210%;
+	}
+	.desktop_events{
+		display: none;
+	}
+	.mob_events{
+		display: block;
+	}
+	#tbt1{
+	 -ms-transform: rotate(90deg); /* IE 9 */
+	
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+#tbt2{
+	 -ms-transform: rotate(-90deg); /* IE 9 */
+	
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
     #front1{
 		width: 40%;
 	}
+	.lg_menu{
+		display: none;
+	}
 	 #sun1{
-
-
 	width: 100px;
 	height: 100px;
 	}
-#reg{
-		width:130%;
+	#reg{
+		width:80%%;
 		top: 20%;
 	}
 	#events{
 	
-		width:130%;
+		width:80%%;
 		top: 20%;
 	}
 	#nights{
-		width:130%;
+		width:80%%;
 		top: 20%;
+	}
+	#logo{
+		width: 25%;
 	}
 }
 @media(max-width:500px){
@@ -372,6 +439,9 @@ li{
 .ocean{
 	bottom: -0px;
 }
+#logo{
+		width: 30%;
+	}
    #sun1{
 	position: absolute;
 	right: 2%;
