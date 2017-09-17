@@ -201,7 +201,8 @@ h4 {
 }
 #logo{
 	height: 100%;
-	width: 14%;
+	width: 12%;
+	margin-top: 5px;
 }
 #intro1 {
 	width:90%;
@@ -229,7 +230,7 @@ h4 {
 	
 }
 .reg_class{
-	top: 10%;
+	top: 14%;
 }
 #sun1{
 	position: absolute;
@@ -252,7 +253,7 @@ h4 {
 }
 #reg{
 	width:40%;
-	top: 10%
+	top: 14%
 	float: left;
 	top: 1000px;
 }
@@ -316,7 +317,58 @@ h4 {
     left:0;
     position: absolute;
 }
+a{
+	text-decoration: none;
+}
+.nav-bar a{
+	color: white;
+}
+#baloon_front1{
+	width: 10%;
+	
+}
+#baloon_front2{
+	width: 20%;
+	
+}
+#baloon_front3{
+	width: 30%;
+	
+}
+.baloon1{
+	left: 45%
+}
+.baloon2{
+	left: 37%
+}
+.baloon3{
+	left: 10%
+}
 
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
 
 @keyframes wave1 {
   0% {
@@ -373,12 +425,30 @@ svg text {
 .baloon{
 	left:70%; 
 }
+#mob_icon{
+	left: 8%;
+	top:20%;
+	display: none;
+}
+.mob_menu_item{
+	display: none;
+	list-style: 
+}
+.mob_lg_item{
+	display: block;
+}
 @media(max-width:1440px){
 .lg_menu{
 	display: none;
 }
 }
 @media(max-width:800px){
+	#mob_icon{
+	display: block;
+}
+.mob_menu_item{
+	display: block;
+}
 	.baloon{
 		left: 60%;
 	}
@@ -427,7 +497,8 @@ svg text {
 		top: 20%;
 	}
 	#logo{
-		width: 25%;
+		width: 30%;
+		height: 100%;
 	}
 }
 @media(max-width:500px){

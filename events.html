@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Waves 2017| Events</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     
-    
+    body{
+      background:  #A8D2DE;
+    }
     /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
@@ -39,15 +43,49 @@
       display: none; 
     }
   }
+
   </style>
 </head>
 <body>
 
 
-
-  
-<div class="container text-center" style="width: 90%;">    
-  <h3 >Events</h3><br>
+<div class="nav-bar" style="z-index: 10000; font-family: patua-one; ">
+<ul class="lg_menu" id="right_menu">
+<li class="lg_item"> <a href="#"> Register</a></li>
+<li class="lg_item"><a href="#">Social Cause</a></li>
+<li class="lg_item"><a href="#">Events</a></li>
+</ul>
+ <div class="container" id="mob_icon" onclick="myFunction(this)" style="position: absolute;">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div> 
+<a href="#"><img id="logo" src="images/logo.png"/></a>
+<ul class="lg_menu" id="left_menu">
+<li class="lg_item"><a href="#">Sponsors</a></li>
+<li class="lg_item"><a href="#">Our Team</a></li>
+<li class="lg_item"><a href="#">Contact Us</a></li>
+</ul>
+<ul class="mob_menu_item">
+<li class="mob_lg_item"> <a href="#"> Register</a></li>
+<li class="mob_lg_item"><a href="#">Social Cause</a></li>
+<li class="mob_lg_item"><a href="#">Events</a></li>
+<li class="mob_lg_item"><a href="#">Sponsors</a></li>
+<li class="mob_lg_item"><a href="#">Our Team</a></li>
+<li class="mob_lg_item"><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div style="background: #c43235;left:5%;top: 0.5% ; width: 90%; height:8%; position: fixed; z-index: 9999; -webkit-transform-origin:0 0;
+  -moz-transform-origin:0 0;
+  -ms-transform-origin:0 0;
+  -o-transform-origin:0 0;
+  transform-origin:0 0;
+  border-radius:1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;"></div>
+<div class="container text-center" style="width: 90%; ">    
+  <h3 style="margin-top: 7%; font-family: 'Josefin Slab', serif; font-size: 60px;">Events</h3><br>
   <!-- Row  1-->
   <div class="row">
     <div class="col-sm-4" style="">

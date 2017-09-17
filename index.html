@@ -11,18 +11,32 @@
 	<link href="main.css" rel="stylesheet" type="text/css" />
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="splash.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> 
 	<!-- 	 -->
 <div class="nav-bar" style="z-index: 10000; font-family: patua-one; ">
 <ul class="lg_menu" id="right_menu">
-<li class="lg_item"> Register</li>
-<li class="lg_item">Hospitality</li>
-<li class="lg_item">Events</li>
+<li class="lg_item"> <a href="#"> Register</a></li>
+<li class="lg_item"><a href="#">Social Cause</a></li>
+<li class="lg_item"><a href="#">Events</a></li>
 </ul>
-<img id="logo" src="images/logo.png"/>
+ <div class="container" id="mob_icon" onclick="myFunction(this)" style="position: absolute;">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div> 
+<a href="#"><img id="logo" src="images/logo.png"/></a>
 <ul class="lg_menu" id="left_menu">
-<li class="lg_item">Sponsors</li>
-<li class="lg_item">Social Cause</li>
-<li class="lg_item">Contact Us</li>
+<li class="lg_item"><a href="#">Sponsors</a></li>
+<li class="lg_item"><a href="#">Our Team</a></li>
+<li class="lg_item"><a href="#">Contact Us</a></li>
+</ul>
+<ul class="mob_menu_item">
+<li class="mob_lg_item"> <a href="#"> Register</a></li>
+<li class="mob_lg_item"><a href="#">Social Cause</a></li>
+<li class="mob_lg_item"><a href="#">Events</a></li>
+<li class="mob_lg_item"><a href="#">Sponsors</a></li>
+<li class="mob_lg_item"><a href="#">Our Team</a></li>
+<li class="mob_lg_item"><a href="#">Contact Us</a></li>
 </ul>
 </div>
 <div style="background: #c43235;left:5%;top: 0.5% ; width: 90%; height:8%; position: fixed; z-index: 9999; -webkit-transform-origin:0 0;
@@ -48,10 +62,22 @@ Author URL: https://prefedge.com
 
 
 	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
-	<div class="baloon" data-0="top:20%" data-500="top:-120%;">
+	<div class="baloon" data-0="top:20%" data-500="top:-150%;">
 <img id="baloon_front" src="images/baloon.png">
 	</div>
-	
+	<div class="baloon1" data-0="top:40%" data-800="top:-100%;">
+<img id="baloon_front1" src="images/baloon.png" >
+	</div>
+	<div class="baloon2" data-0="top:100%" data-700="top:-100%;">
+<img id="baloon_front2" src="images/baloon.png" >
+	</div>
+	<div class="baloon3" data-0="top:60%" data-600="top:-100%;">
+<img id="baloon_front3" src="images/baloon.png" >
+	</div>
+	<div id="front_writeup" style="color:white;  top: 25%; font-size: 25px; padding: 40px; font-family: 'Josefin Slab', serif;" data-0="display:block; top:25%;" >
+		Last Year we surfed the Tides Of Time...
+		<br>... This year lets write a tale in two shades!
+	</div>
 	<!-- <div id="intro" data-0="opacity:1;top:10%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
 		 <img id="front1" src="images/g-9.jpg" --> 
 	<!-- </div> -->
@@ -82,7 +108,7 @@ Author URL: https://prefedge.com
 </div>
 </div>
 <!-- Splash Screen Ends Here -->
-		<div class="sun_class" id="easing" data-0="display:none;" data-300="display:block;top:-15%;" data-500="bottom:100%" data-1000="top:3%;" data-3600="top:3%;" data-4000="top:-15%;;" width="100%" >
+		<div class="sun_class" id="easing" data-0="display:none;" data-300="display:block;top:-15%;" data-500="bottom:100%" data-1000="top:7%;" data-3600="top:7%;" data-4000="top:-15%;;" width="100%" >
 		<img id="sun1" src="images/sun.png">
 		</div>
 		<div class="college_class" id="easing" data-300="top:150%" data-500="top:150%" data-1000="top:110%;" data-3600="top:100%;" data-4000="top:20%;" data-6300="top:20%;" data-6500="top:0;" width="100%" >
@@ -96,7 +122,7 @@ Author URL: https://prefedge.com
 		<!-- 025a72 -->
 		<canvas id='bgCanvas'></canvas>
 		</div>
-		<div class="sun_class" id="easing" data-0="display:none;" data-4000="display:block;top:-15%;" data-4200="bottom:100%" data-4400="top:3%;" data-10000="top:3%;" data-12000="top:-15%;;" width="100%" style="z-index: 1000000;">
+		<div class="sun_class" id="easing" data-0="display:none;" data-4000="display:block;top:-15%;" data-4200="bottom:100%" data-4400="top:5%;" data-10000="top:5%;" data-12000="top:-15%;;" width="100%" style="z-index: 1000000;">
 		
 		</div>		
 		<div class="star_class" id="easing" data-0="display:none;" data-4400="display:block;"  >
@@ -105,20 +131,20 @@ Author URL: https://prefedge.com
 
 		<!-- Events Start Here -->
 		<div class="desktop_events" >
-		<div class="events_new" id="easing" data-0="display:none" data-4050="display:block; left:100%; top:12%;" data-4200="left:00%;" data-5100="left:0%" data-5300="left:-100%;" style="z-index: 10004; width:100%;">
+		<div class="events_new" id="easing" data-0="display:none" data-4050="display:block; left:100%; top:12%;" data-4200="left:00%;" data-5100="left:0%" data-5800="left:-100%;" style="z-index: 10004; width:100%;">
 				<img id="tbt" src="images/events1.png" style="width: 40%;">
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-4250="display:block; top:100%; left:20%;" data-4350="top:60%;" data-5100="top:50%" data-5300="top:100%;" style="z-index: 10003; width:14%;">
+		<div class="events_new" id="easing" data-0="display:none" data-4250="display:block; top:100%; left:8.8%;" data-4350="top:60%;" data-5100="top:50%" data-5800="top:100%;" style="z-index: 10003; width:14%;">
 			<img id="tbt" src="images/beau_vista.png"/>
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-4300="display:block; top:100%; left:40%;" data-4400="top:60%;" data-5100="top:50%" data-5300="top:100%;" style="z-index: 10002; width:14%;">
+		<div class="events_new" id="easing" data-0="display:none" data-4300="display:block; top:100%; left:31.6%;" data-4400="top:60%;" data-5100="top:50%" data-5800="top:100%;" style="z-index: 10002; width:14%;">
 			<img id="tbt" src="images/carpe_dictum.png"/>
 			</div>
-		<div class="events_new" id="easing" data-0="display:none" data-4350="display:block; top:100%; left:60%;" data-4550="top:60%;" data-5100="top:50%" data-5300="top:100%;" style="z-index: 10001; width:14%; ">
+		<div class="events_new" id="easing" data-0="display:none" data-4350="display:block; top:100%; left:54.4%;" data-4550="top:60%;" data-5100="top:50%" data-5800="top:100%;" style="z-index: 10001; width:14%; ">
 			<img id="tbt" src="images/florence.png"/>
 		</div>
 		
-		<div class="events_new" id="easing" data-0="display:none" data-4400="display:block; top:100%; left:80%;" data-4600="top:60%;" data-5100="top:50%" data-5300="top:100%;" style="z-index: 10000; width: 14%;">
+		<div class="events_new" id="easing" data-0="display:none" data-4400="display:block; top:100%; left:77.2%;" data-4600="top:60%;" data-5100="top:50%" data-5800="top:100%;" style="z-index: 10000; width: 14%;">
 			<img id="tbt" src="images/specials.png"/>
 		</div>
 		</div>
@@ -147,20 +173,20 @@ Author URL: https://prefedge.com
 
 		<!-- Nights Start from here -->
 		<div class="desktop_events" >
-		<div class="events_new" id="easing" data-0="display:none" data-5200="display:block; left:100%; top:12%;" data-5300="left:00%;" data-5900="left:0%" data-6100="left:-100%;" style="z-index: 10004; width:100%;">
+		<div class="events_new" id="easing" data-0="display:none" data-5300="display:block; left:100%; top:12%;" data-5300="left:00%;" data-5900="left:0%" data-6300="left:-100%;" style="z-index: 10004; width:100%;">
 				<img id="tbt" src="images/nights.png" style="width: 40%;">
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-5300="display:block; top:100%; left:20%;" data-5400="top:60%;" data-6100="top:50%" data-6300="top:100%;" style="z-index: 10003; width:14%;">
+		<div class="events_new" id="easing" data-0="display:none" data-5300="display:block; top:100%; left:8.8%;" data-5800="top:60%;" data-6100="top:50%" data-6600="top:100%;" style="z-index: 10003; width:14%;">
 			<img id="tbt" src="images/beau_vista.png"/>
 		</div>
-		<div class="events_new" id="easing" data-0="display:none" data-5400="display:block; top:100%; left:40%;" data-5500="top:60%;" data-6100="top:50%" data-6300="top:100%;" style="z-index: 10002; width:14%;">
+		<div class="events_new" id="easing" data-0="display:none" data-5400="display:block; top:100%; left:31.6%;" data-5800="top:60%;" data-6100="top:50%" data-6600="top:100%;" style="z-index: 10002; width:14%;">
 			<img id="tbt" src="images/carpe_dictum.png"/>
 			</div>
-		<div class="events_new" id="easing" data-0="display:none" data-5350="display:block; top:100%; left:60%;" data-5450="top:60%;" data-6100="top:50%" data-6300="top:100%;" style="z-index: 10001; width:14%; ">
+		<div class="events_new" id="easing" data-0="display:none" data-5350="display:block; top:100%; left:54.4%;" data-5800="top:60%;" data-6100="top:50%" data-6600="top:100%;" style="z-index: 10001; width:14%; ">
 			<img id="tbt" src="images/florence.png"/>
 		</div>
 		
-		<div class="events_new" id="easing" data-0="display:none" data-5450="display:block; top:100%; left:80%;" data-5550="top:60%;" data-6100="top:50%" data-6300="top:100%;" style="z-index: 10000; width: 14%;">
+		<div class="events_new" id="easing" data-0="display:none" data-5450="display:block; top:100%; left:77.2%;" data-5800="top:60%;" data-6100="top:50%" data-6600="top:100%;" style="z-index: 10000; width: 14%;">
 			<img id="tbt" src="images/specials.png"/>
 		</div>
 		</div>
@@ -299,6 +325,12 @@ tl.to("#distortion", 1, {attr:{scale:60}, ease:Power2.easeOut})
 </script>
 <script type="text/javascript">
 $(".splash").delay(0000).fadeOut();
+
+</script>
+<script type="text/javascript">
+	function myFunction(x) {
+    x.classList.toggle("change");
+} 
 </script>
 
 </body>
