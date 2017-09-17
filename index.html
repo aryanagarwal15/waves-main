@@ -25,6 +25,15 @@
 <li class="lg_item">Contact Us</li>
 </ul>
 </div>
+<div style="background: #c43235;left:5%;top: 0.5% ; width: 90%; height:8%; position: fixed; z-index: 9999; -webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+	border-radius:1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;"></div>
 <!-- =======================================================
 Author: Aryan Agarwal
 Author URL: https://prefedge.com
@@ -242,7 +251,7 @@ Author URL: https://prefedge.com
 	var canvas = document.getElementById('bgCanvas');
 var ctx = canvas.getContext('2d');
 var particles = [];
-var particleCount = 8;
+var particleCount = 12;
 
 for(var i=0; i<particleCount;i++)
   particles.push(new particle());
@@ -289,7 +298,7 @@ tl.to("#distortion", 1, {attr:{scale:60}, ease:Power2.easeOut})
 .to("#distortion", 1, {attr:{scale:40}, ease:Power2.easeOut});
 </script>
 <script type="text/javascript">
-$(".splash").delay(6000).fadeOut();
+$(".splash").delay(0000).fadeOut();
 </script>
 
 </body>
