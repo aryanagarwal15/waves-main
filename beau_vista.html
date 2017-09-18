@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="main.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> 
+   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -36,7 +37,92 @@
       margin: auto;
       min-height:200px;
   }
+  #modal-img{
+    height: 100%; width: 100%; z-index: 20; float: left; position: relative;
+  }
+  .modal-text{
+    float: right; background: rgba(0, 0, 0, 0.85) /* Green background with 30% opacity */; z-index: 21; position: absolute; right: 2.5%; width: 50%; height: 97%
+  }
+  .modal-body{
+    height: 860px;
+  }
+  #head2{
+    margin-top: 7%; font-family: 'Josefin Slab', serif; font-size: 60px;
+  }
+  h3, h2{
+    margin:0;
+  }
+  #modal-heading{
+     margin-top: 7%; font-family: 'Josefin Slab', serif; font-size: 60px;
+  }
 
+.animate
+{
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;  
+}
+
+.blue
+{
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+  background-color: #E74C3C;
+  border-bottom: 5px solid #BD3E31;
+  text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+  background-color: #82BF56;
+  border-bottom: 5px solid #669644;
+  text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+  background-color: #F2CF66;
+  border-bottom: 5px solid #D1B358;
+  text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+   @media (max-width: 800px) {
+     #modal-img{
+    height: 30%; width: 100%; z-index: 20; float: left; position: relative;
+  }
+  #head2{
+    margin-top: 17%;
+  }
+  .modal-text{
+    float: none; z-index: 19; position: relative; right: 0; width: 100%; height: 97%
+  }
+  .modal-body{
+   height: 100%;
+  }
+   }
   /* Hide the carousel text when the screen is less than 600 pixels wide */
   @media (max-width: 600px) {
     .carousel-caption {
@@ -47,38 +133,32 @@
   </style>
 </head>
 <body>
-<!-- nav bar starts -->
-<div class="nav-bar" style="z-index: 10000; font-family: patua-one; ">
+
+<div class="nav-bar" style="z-index: 10000; font-family: 'Pacifico', cursive;">
 <ul class="lg_menu" id="right_menu">
-<li class="lg_item"> <a href="#"> Register</a></li>
-<li class="lg_item"><a href="#">Social Cause</a></li>
-<li class="lg_item"><a href="#">Events</a></li>
+<li class="lg_item"> <a href="http://www.bits-waves.org/reg"> Register</a></li>
+<li class="lg_item"><a href="http://www.bits-waves.org/socialcause">Social Cause</a></li>
+<li class="lg_item"><a href="http://www.bits-waves.org/events">Events</a></li>
 </ul>
  <div class="container" id="mob_icon" onclick="myFunction(this)" style="position: absolute;">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
 </div> 
-<a href="#"><img id="logo" src="images/logo.png"/></a>
+<a href="#"><img id="logo" src="images/logo.png" style="z-index:11111 " /></a>
 <ul class="lg_menu" id="left_menu">
-<li class="lg_item"><a href="#">Sponsors</a></li>
-<li class="lg_item"><a href="#">Our Team</a></li>
-<li class="lg_item"><a href="#">Contact Us</a></li>
+<li class="lg_item"><a href="http://www.bits-waves.org/sponsors">Sponsors</a></li>
+<li class="lg_item"><a href="http://www.bits-waves.org/our_team">Our Team</a></li>
+<li class="lg_item"><a href="http://www.bits-waves.org/contact_us">Contact Us</a></li>
 </ul>
-<div id="myMenu" style="position: fixed; width: 100%; text-align:center; height: 100%; background: red; top: 0; z-index: 9999 ">
- <div class="container" id="mob_icon" onclick="myFunction(this)" style="position: absolute;">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div> 
-<a href="#"><img id="logo" src="images/logo.png" style="width: 20%; height: 10%;" /></a>
-<ul class="mob_menu_item">
-<li class="mob_lg_item"> <a href="#"> Register</a></li>
-<li class="mob_lg_item"><a href="#">Social Cause</a></li>
-<li class="mob_lg_item"><a href="#">Events</a></li>
-<li class="mob_lg_item"><a href="#">Sponsors</a></li>
-<li class="mob_lg_item"><a href="#">Our Team</a></li>
-<li class="mob_lg_item"><a href="#">Contact Us</a></li>
+<div id="myMenu" style="position: relative; width: 100%; text-align:left; height: 800px; background: #c43235;  z-index: 9999 ">
+<ul class="mob_menu_item" >
+<a href="http://www.bits-waves.org/reg"><li class="mob_lg_item">  Register</li>
+<a href="http://bits-waves.org/socialcause/"><li class="mob_lg_item">Social Cause</li></a>
+<a href="http://www.bits-waves.org/events"><li class="mob_lg_item">Events</li></a>
+<a href="http://www.bits-waves.org/sponsors"><li class="mob_lg_item">Sponsors</li></a>
+<a href="http://www.bits-waves.org/our_team"><li class="mob_lg_item">Our Team</li></a>
+<a href="http://www.bits-waves.org/contact_us"><li class="mob_lg_item">Contact Us</li></a>
 </ul>
 </div>
 </div>
@@ -91,36 +171,35 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;"></div>
-  <!-- navbar ends -->
 <div class="container text-center" style="width: 90%; ">    
-  <h3 style="margin-top: 7%; font-family: 'Josefin Slab', serif; font-size: 60px;">Events</h3><br>
+  <h3 id="head2" style="">Events</h3><br>
   <!-- Row  1-->
   <div class="row">
-    <div class="col-sm-4" style="">
+    <div class="col-sm-4" style="" style="width: 350px; height: 180px; text-align: center;">
      <div class="hover07 column">
-  <div data-toggle="modal" data-target="#myModal">
-    <figure><img src="https://placehold.it/150x80?text=IMAGE" style="width: 100%; position: relative;" /></figure>
-    <span style="position: absolute; top:90px; left:175px; text-align: center; font-size: 35px;">Hover</span>
+  <div data-toggle="modal" data-target="#myModal" >
+    <figure><img src="images/event1.jpeg" style="width: 100%; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Hover</span>
     <div style="height: 10px;"></div>
     <!-- 350x180 -->
   </div>
     </div>
     </div>
-    <div class="col-sm-4">
+  <div class="col-sm-4" style="" style="width: 350px; height: 180px; text-align: center;">
      <div class="hover07 column">
-  <div data-toggle="modal" data-target="#myModal">
-    <figure><img src="https://placehold.it/150x80?text=IMAGE" style="width: 100%; position: relative;" /></figure>
-    <span style="position: absolute; top:90px; left:175px; text-align: center; font-size: 35px;">Hover</span>
+  <div data-toggle="modal" data-target="#myModal" >
+    <figure><img src="images/event1.jpeg" style="width: 100%; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Hover</span>
     <div style="height: 10px;"></div>
     <!-- 350x180 -->
   </div>
     </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4" style="" style="width: 350px; height: 180px; text-align: center;">
      <div class="hover07 column">
-  <div data-toggle="modal" data-target="#myModal">
-    <figure><img src="https://placehold.it/150x80?text=IMAGE" style="width: 100%; position: relative;" /></figure>
-    <span style="position: absolute; top:90px; left:175px; text-align: center; font-size: 35px;">Hover</span>
+  <div data-toggle="modal" data-target="#myModal" >
+    <figure><img src="images/event1.jpeg" style="width: 100%; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Hover</span>
     <div style="height: 10px;"></div>
     <!-- 350x180 -->
   </div>
@@ -129,31 +208,31 @@
     </div>
     <!-- Row2 -->
    <div class="row">
-    <div class="col-sm-4" style="">
+    <div class="col-sm-4" style="" style="width: 350px; height: 180px; text-align: center;">
      <div class="hover07 column">
-  <div data-toggle="modal" data-target="#myModal">
-    <figure><img src="https://placehold.it/150x80?text=IMAGE" style="width: 100%; position: relative;" /></figure>
-    <span style="position: absolute; top:90px; left:175px; text-align: center; font-size: 35px;">Hover</span>
+  <div data-toggle="modal" data-target="#myModal" >
+    <figure><img src="images/event1.jpeg" style="width: 100%; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Hover</span>
     <div style="height: 10px;"></div>
     <!-- 350x180 -->
   </div>
     </div>
     </div>
-    <div class="col-sm-4">
+  <div class="col-sm-4" style="" style="width: 350px; height: 180px; text-align: center;">
      <div class="hover07 column">
-  <div data-toggle="modal" data-target="#myModal">
-    <figure><img src="https://placehold.it/150x80?text=IMAGE" style="width: 100%; position: relative;" /></figure>
-    <span style="position: absolute; top:90px; left:175px; text-align: center; font-size: 35px;">Hover</span>
+  <div data-toggle="modal" data-target="#myModal" >
+    <figure><img src="images/event1.jpeg" style="width: 100%; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Hover</span>
     <div style="height: 10px;"></div>
     <!-- 350x180 -->
   </div>
     </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4" style="" style="width: 350px; height: 180px; text-align: center;">
      <div class="hover07 column">
-  <div data-toggle="modal" data-target="#myModal">
-    <figure><img src="https://placehold.it/150x80?text=IMAGE" style="width: 100%; position: relative;" /></figure>
-    <span style="position: absolute; top:90px; left:175px; text-align: center; font-size: 35px;">Hover</span>
+  <div data-toggle="modal" data-target="#myModal" >
+    <figure><img src="images/event1.jpeg" style="width: 100%; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Hover</span>
     <div style="height: 10px;"></div>
     <!-- 350x180 -->
   </div>
@@ -162,31 +241,31 @@
     </div>
     <!-- End of Row -->
     <div class="row">
-    <div class="col-sm-4" style="">
+    <div class="col-sm-4" style="" style="width: 350px; height: 180px; text-align: center;">
      <div class="hover07 column">
-  <div data-toggle="modal" data-target="#myModal">
-    <figure><img src="https://placehold.it/150x80?text=IMAGE" style="width: 100%; position: relative;" /></figure>
-    <span style="position: absolute; top:90px; left:175px; text-align: center; font-size: 35px;">Hover</span>
+  <div data-toggle="modal" data-target="#myModal" >
+    <figure><img src="images/event1.jpeg" style="width: 100%; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Hover</span>
     <div style="height: 10px;"></div>
     <!-- 350x180 -->
   </div>
     </div>
     </div>
-    <div class="col-sm-4">
+  <div class="col-sm-4" style="" style="width: 350px; height: 180px; text-align: center;">
      <div class="hover07 column">
-  <div data-toggle="modal" data-target="#myModal">
-    <figure><img src="https://placehold.it/150x80?text=IMAGE" style="width: 100%; position: relative;" /></figure>
-    <span style="position: absolute; top:90px; left:175px; text-align: center; font-size: 35px;">Hover</span>
+  <div data-toggle="modal" data-target="#myModal" >
+    <figure><img src="images/event1.jpeg" style="width: 100%; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Hover</span>
     <div style="height: 10px;"></div>
     <!-- 350x180 -->
   </div>
     </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4" style="" style="width: 350px; height: 180px; text-align: center;">
      <div class="hover07 column">
-  <div data-toggle="modal" data-target="#myModal">
-    <figure><img src="https://placehold.it/150x80?text=IMAGE" style="width: 100%; position: relative;" /></figure>
-    <span style="position: absolute; top:90px; left:175px; text-align: center; font-size: 35px;">Hover</span>
+  <div data-toggle="modal" data-target="#myModal" >
+    <figure><img src="images/event1.jpeg" style="width: 100%; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Hover</span>
     <div style="height: 10px;"></div>
     <!-- 350x180 -->
   </div>
@@ -197,18 +276,34 @@
 
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
+<div id="myModal" class="modal fade" role="dialog" style="z-index: 23333">
+  <div class="modal-dialog modal-lg" style="margin-top: 20px; width: 95%;">
 
     <!-- Modal content-->
-    <div class="modal-content">
+    <div class="modal-content" style="background: black; color: white;">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title" style="text-align: center; ">Event 1</h4>
+        <button type="button" class="close" style="color: #fff;" data-dismiss="modal">&times;</button>
       </div>
-      <div class="modal-body">
-      <img src="images/nights.png">
-        <p>Some text in the modal.</p>
+      <div class="modal-body" style="">
+      <img id="modal-img" src="images/event1.jpeg" style="">
+      <div class="modal-text" style="">
+       <h2 id="modal-heading">Event 1</h2><br><br>
+       <p>About evnt goes here About evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes here</p>
+       <br>
+       <h3>Rules</h3>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <br><br><br>
+       <div class="btn_links" style="width: 100%;">
+       <a class="action-button shadow animate blue" href="#" style="padding: 15px;">Register</a>
+       <a class="action-button shadow animate red" href="#" width="50%" style="padding: 15px;">Know More</a>
+        </div>
+        </div>
       </div>
       
     </div>
@@ -228,17 +323,17 @@
   $('#mob_icon').click(function() {
     if (menuVisible) {
       $('#myMenu').css({'display':'none'});
+     $('body').css({'background':'#A8D2DE'});
       menuVisible = false;
       return;
     }
     $('#myMenu').css({'display':'block'});
+    $('body').css({'background':'#c43235'});
     menuVisible = true;
   });
-  $('#myMenu').click(function() {
-    $(this).css({'display':'none'});
-    menuVisible = false;
-  });
+  
 });
+
 </script>
 </body>
 </html>
