@@ -320,9 +320,7 @@ h4 {
 a{
 	text-decoration: none;
 }
-.nav-bar a{
-	color: white;
-}
+
 #baloon_front1{
 	width: 10%;
 	
@@ -402,7 +400,7 @@ svg text {
 .lg_menu{
 	position: absolute;
 	font-size: 25px;
-	color: white;
+	
 }
 #right_menu{
 	top: 25px;
@@ -415,7 +413,19 @@ svg text {
 }
 .lg_item{
 	padding: 25px;
+	color: white;
 }
+.lg_item:hover{
+	color: #eee;
+
+}
+.nav-bar a{
+	color: white;
+}
+.nav-bar a:hover{
+	color: #ddd;
+}
+
 .mob_events{
 	display: none;
 }
@@ -430,12 +440,26 @@ svg text {
 	top:20%;
 	display: none;
 }
-.mob_menu_item{
+#myMenu{
 	display: none;
-	list-style: 
+	margin-right: 100%;
+
 }
 .mob_lg_item{
 	display: block;
+	margin-left: 50px;
+	font-family: 'Josefin Slab', serif;
+	font-size: 25px;
+	border-top:1px solid white;
+	padding: 20px;
+	width: 80%;
+}
+.mob_lg_item:hover{
+	background:  #222;
+
+}
+#myMenu{
+	margin-top: 15px;
 }
 @media(max-width:1440px){
 .lg_menu{
@@ -446,9 +470,9 @@ svg text {
 	#mob_icon{
 	display: block;
 }
-.mob_menu_item{
+/*.mob_menu_item{
 	display: block;
-}
+}*/
 	.baloon{
 		left: 60%;
 	}
