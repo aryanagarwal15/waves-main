@@ -200,7 +200,7 @@ h4 {
 	top: 75px;
 }
 #logo{
-	height: 100%;
+	height: 80%;
 	width: 12%;
 	margin-top: 5px;
 }
@@ -274,7 +274,7 @@ h4 {
 
 }
 .nav-bar{
-	position: fixed; top: 0; z-index: 1000; width: 100%; height: 8%;
+	position: fixed; top: 0; z-index: 1000; width: 100%; height: 10%;
 	text-align: center;
 	
 }
@@ -436,7 +436,7 @@ svg text {
 	left:70%; 
 }
 #mob_icon{
-	left: 8%;
+	left: 5%;
 	top:20%;
 	display: none;
 }
@@ -461,14 +461,40 @@ svg text {
 #myMenu{
 	margin-top: 15px;
 }
+.back_box{
+	background: #c43235;left:5%;top: 0.5% ; width: 90%; height:8%; position: fixed; z-index: 99999; -webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+	border-radius:1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 @media(max-width:1440px){
 .lg_menu{
 	display: none;
+}
+#mob_icon{
+	display: block;
 }
 }
 @media(max-width:800px){
 	#mob_icon{
 	display: block;
+	height: 10%;
+}
+.back_box{
+	background: #c43235;left:0%;top: 0.0% ; width: 100%; height:10%; position: fixed; z-index: 99999; -webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+	border-radius:0em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 /*.mob_menu_item{
 	display: block;
@@ -522,7 +548,7 @@ svg text {
 	}
 	#logo{
 		width: 30%;
-		height: 100%;
+		height: 80%;
 	}
 }
 @media(max-width:500px){
