@@ -20,15 +20,15 @@ html, body {
 
 body {
 	background: #A8D2DE;
-	background: -webkit-linear-gradient(top, #A8D2DE, #A8D2DE 100%);
-	background: -moz-linear-gradient(top, #A8D2DE, #A8D2DE 100%);
+	/*background: -webkit-linear-gradient(top, #000, #000 100%);
+	background: -moz-linear-gradient(top, #A8D2DE, #A8D2DE0 100%);
 	background: -o-linear-gradient(top, #A8D2DE, #A8D2DE 100%);
 	background: -ms-linear-gradient(top, #A8D2DE, #A8D2DE 100%);
-	background: linear-gradient(top, #A8D2DE, #A8D2DE 100%);
+	background: linear-gradient(top, #A8D2DE, #A8D2DE 100%);*/
 	background-attachment:fixed;
 	
 }
-
+/*A8D2DE*/
 ol, ul {
 	list-style: none;
 }
@@ -350,7 +350,10 @@ a{
     margin: 6px 0;
     transition: 0.4s;
 }
-
+.front_text{
+	left:10%;
+	z-index: 1;font-family: 'Josefin Slab', serif;font-size: 25px;
+}
 /* Rotate first bar */
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
@@ -462,16 +465,33 @@ svg text {
 	margin-top: 15px;
 }
 .back_box{
-	background: #c43235;left:5%;top: 0.5% ; width: 90%; height:8%; position: fixed; z-index: 99999; -webkit-transform-origin:0 0;
+	background: #c43235;width: 100%; height:8%; position: fixed; z-index: 99999; -webkit-transform-origin:0 0;
 	-moz-transform-origin:0 0;
 	-ms-transform-origin:0 0;
 	-o-transform-origin:0 0;
 	transform-origin:0 0;
-	border-radius:1em;
+	
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+.mob_display{
+		display: none;
+	}
+/*only css that is important*/
+.events_head{
+	height: 100%;top: 50%; color: white; z-index: 11;text-align: center; width: 30%;font-family: 'Eczar', serif;top: 40%;
+}
+.events_text{
+ font-size: 40px; 
+}
+.about_text{
+	font-size: 40px;
+}
+
+/*It ends all here*/
+
 @media(max-width:1440px){
 .lg_menu{
 	display: none;
@@ -481,6 +501,31 @@ svg text {
 }
 }
 @media(max-width:800px){
+	.only_desk{
+		display: none;
+	}
+	.events_text{
+	transform: rotate(90deg);
+	right: 10%;
+	
+	font-size: 100px;
+}
+.about_text{
+	transform: rotate(-90deg);
+	left: 5%;
+	
+	font-size: 60px;
+}
+	.desk_display{
+		display: none;
+	}
+	.mob_display{
+		display: block;
+	}
+	.front_text{
+	left:5%;
+	z-index: 1;font-family: 'Josefin Slab', serif;font-size: 20px;
+}
 	#mob_icon{
 	display: block;
 	height: 10%;
@@ -496,6 +541,7 @@ svg text {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.
 /*.mob_menu_item{
 	display: block;
 }*/
