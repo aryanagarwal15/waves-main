@@ -465,7 +465,7 @@ svg text {
 	margin-top: 15px;
 }
 .back_box{
-	background: #c43235;width: 100%; height:8%; position: fixed; z-index: 99999; -webkit-transform-origin:0 0;
+	background-color: rgba(0,0,0,0.35); width: 100%; height:8%; position: fixed; z-index: 99999; -webkit-transform-origin:0 0;
 	-moz-transform-origin:0 0;
 	-ms-transform-origin:0 0;
 	-o-transform-origin:0 0;
@@ -479,6 +479,9 @@ svg text {
 .mob_display{
 		display: none;
 	}
+.only_mob{
+	display: none;
+}
 /*only css that is important*/
 .events_head{
 	height: 100%;top: 50%; color: white; z-index: 11;text-align: center; width: 30%;font-family: 'Eczar', serif;top: 40%;
@@ -489,8 +492,18 @@ svg text {
 .about_text{
 	font-size: 40px;
 }
-
+.about12{
+	top: 25%; width: 70%; height: 50%; border:2px solid; text-align: center;
+}
 /*It ends all here*/
+@font-face {
+    font-family: lovelo;
+    src: url("fonts/lovelo_black.otf") format("opentype");
+}
+@font-face {
+    font-family: simplifica;
+    src: url("fonts/SIMPLIFICA.ttf") format("truetype");
+}
 
 @media(max-width:1440px){
 .lg_menu{
@@ -501,6 +514,12 @@ svg text {
 }
 }
 @media(max-width:800px){
+	.only_mob{
+		display: block;
+	}
+	.about12{
+		width: 90%; height: 70%;
+	}
 	.only_desk{
 		display: none;
 	}
@@ -531,7 +550,7 @@ svg text {
 	height: 10%;
 }
 .back_box{
-	background: #c43235;left:0%;top: 0.0% ; width: 100%; height:10%; position: fixed; z-index: 99999; -webkit-transform-origin:0 0;
+	left:0%;top: 0.0% ; width: 100%; height:10%; position: fixed; z-index: 99999; -webkit-transform-origin:0 0;
 	-moz-transform-origin:0 0;
 	-ms-transform-origin:0 0;
 	-o-transform-origin:0 0;
