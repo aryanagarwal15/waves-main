@@ -13,7 +13,11 @@
   <style>
     
     body{
-      background:  #A8D2DE;
+       background: #f09046  ; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #7d4376,#f09046); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #7d4376,#f09046); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #7d4376,#f09046); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #7d4376,#f09046); /* Standard syntax */
     }
     /* Add a gray background color and some padding to the footer */
     footer {
@@ -155,7 +159,7 @@
 <li class="lg_item"><a href="https://www.bits-waves.org/our_team">Our Team</a></li>
 <li class="lg_item"><a href="https://www.bits-waves.org/contact_us">Contact Us</a></li>
 </ul>
-<div id="myMenu" style="position: relative; width: 100%; text-align:left; height: 800px; background: #c43235;  z-index: 100000 ">
+<div id="myMenu" style="position: relative; width: 100%; text-align:left; height: 800px;background-color: rgba(0,0,0,0.35);  z-index: 100000 ">
 <ul class="mob_menu_item" >
 <a href="https://www.bits-waves.org/reg"><li class="mob_lg_item">  Register</li></a>
 <a href="https://www.bits-waves.org/socialcause"><li class="mob_lg_item">Social Cause</li></a>
@@ -330,7 +334,7 @@
       return;
     }
     $('#myMenu').css({'display':'block'});
-    $('body').css({'background':'#c43235'});
+    $('body').css({'background':''});
      $('.back_box').css({'width':'100%'});
       $('.back_box').css({'height':'100%'});
       
