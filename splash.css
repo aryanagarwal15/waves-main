@@ -88,3 +88,8 @@ opacity: .2;
   }
   100% { transform: rotate(360deg); }
 }
+@media(max-width:800px){
+  .out{
+    margin-top: 50%;
+  }
+}
