@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Waves 2017 | Registration</title>
+  <title>Waves 2017| Events</title>
   <meta charset="utf-8">
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="main.css" rel="stylesheet" type="text/css" />
-  <link href="reg.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> 
    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -118,6 +117,9 @@
   padding: 0;
   margin:0;
 }
+a{
+  color: black;
+}
    @media (max-width: 800px) {
      #modal-img{
     height: 30%; width: 100%; z-index: 20; float: left; position: relative;
@@ -171,73 +173,21 @@
 </ul>
 </div>
 </div>
-<div class="back_box" style="top: 0;"></div>
+<div class="back_box" style=""></div>
 <!-- Nav Bar ends Here -->
-<!-- Reg Form Begins Here -->
-<div class="form" style="margin-top: 10%;">
-      <div class="tab-content">
-        <div id="signup">   
-          <h1 style="font-family: 'Pacifico', cursive;">Registration</h1>
-          
-          <form action="/" method="post">
-          
-          <div class="top-row">
-            <div class="field-wrap">
-              <label>
-                Full Name<span class="req">*</span>
-              </label>
-              <input type="text" required autocomplete="off" />
-            </div>
-        
-            <div class="field-wrap">
-              <label>
-                Email<span class="req">*</span>
-              </label>
-              <input type="email"required autocomplete="off"/>
-            </div>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              College Name<span class="req">*</span>
-            </label>
-            <input type="text"required autocomplete="off"/>
-          </div>
-          
-          <div class="field-wrap">
-            <label>
-              Contact No.<span class="req">*</span>
-            </label>
-            <input type="text"required autocomplete="off"/>
-          </div>
-           <div class="field-wrap">
-            <label>
-            Event<span class="req">*</span>
-            </label>
-            <input type="text"required autocomplete="off"/>
-          </div>
-          
-          <button type="submit" class="button button-block"/>Register</button>
-          
-          </form>
-
-        </div>
-        
-        <div id="login">   
-        </div>
-        
-      </div><!-- tab-content -->
-      
-</div> <!-- /form -->
-
-
-
-
-<!-- Reg Form Ends Here -->
-
+<div class="container text-center" style="width: 100%; padding-top: 20%; font-family: lovelo; font-size: 40px;">    
+ Page Under construction
+    </div>
   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  function myFunction(x) {
+    x.classList.toggle("change");
+} 
+</script>
 <script type="text/javascript">
   $(function() {
   var menuVisible = false;
@@ -261,51 +211,6 @@
   
 });
 
-</script>
-<script type="text/javascript">
-  $('.form').find('input, textarea').on('keyup blur focus', function (e) {
-  
-  var $this = $(this),
-      label = $this.prev('label');
-
-    if (e.type === 'keyup') {
-      if ($this.val() === '') {
-          label.removeClass('active highlight');
-        } else {
-          label.addClass('active highlight');
-        }
-    } else if (e.type === 'blur') {
-      if( $this.val() === '' ) {
-        label.removeClass('active highlight'); 
-      } else {
-        label.removeClass('highlight');   
-      }   
-    } else if (e.type === 'focus') {
-      
-      if( $this.val() === '' ) {
-        label.removeClass('highlight'); 
-      } 
-      else if( $this.val() !== '' ) {
-        label.addClass('highlight');
-      }
-    }
-
-});
-
-$('.tab a').on('click', function (e) {
-  
-  e.preventDefault();
-  
-  $(this).parent().addClass('active');
-  $(this).parent().siblings().removeClass('active');
-  
-  target = $(this).attr('href');
-
-  $('.tab-content > div').not(target).hide();
-  
-  $(target).fadeIn(600);
-  
-});
 </script>
 </body>
 </html>
