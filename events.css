@@ -302,14 +302,14 @@ Button Hover Effect
     outline: none;
     text-decoration: none;
     position: relative;
-    font-size: 6em;
+    font-size: 4em;
     line-height: 1;
     color: #9e9ba4;
     display: inline-block;
 }
 /* Manko */
 .link--manko {
-    color: #505050;
+    color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     padding: 0 .65em 0 0.65em;

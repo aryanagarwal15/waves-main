@@ -439,7 +439,7 @@
             $grid.isotope('reloadItems')
         });
         window.addEventListener("keyup", function (e) {
-            if (e.keyCode == 27) window.location = "http://bits-goa.org/";
+            if (e.keyCode == 27) window.location = "http://bits-waves.org/";
         }, false);
     </script>
     <script src="toucheffect.js"></script>
@@ -454,5 +454,34 @@
          "keywords":"Waves, Goa , Waves 2017, BITS Goa"
         }
     </script>
+    <script type="text/javascript">
+  function myFunction(x) {
+    x.classList.toggle("change");
+} 
+</script>
+<script type="text/javascript">
+  $(function() {
+  var menuVisible = false;
+  $('#mob_icon').click(function() {
+    if (menuVisible) {
+      $('#myMenu').css({'display':'none'});
+     $('body').css({'background':'#A8D2DE'});
+     $('.back_box').css({'width':'100%'});
+      $('.back_box').css({'height':'10%'});
+      
+      menuVisible = false;
+      return;
+    }
+    $('#myMenu').css({'display':'block'});
+    $('body').css({'background':''});
+     $('.back_box').css({'width':'100%'});
+      $('.back_box').css({'height':'100%'});
+      
+    menuVisible = true;
+  });
+  
+});
+
+</script>
     
 </html>
